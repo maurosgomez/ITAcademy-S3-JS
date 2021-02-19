@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Bàsic</title>
+</head>
+
+<body>
+    <script>
+
+    // EXERCICI 1
+
+    console.log("Hola Mundo");
+
+    // EXERCICI 2
+
+    alert("¡Me llamo Mauro!");
+
+    // EXERCICI 3
+
+    let nom = "Mauro";
+    let cognom = "Gomez"
+    console.log(nom + " " + cognom);
+
+    // EXERCICI 4
+
+    let numero1 = 35;
+    let numero2 = 46;
+    console.log(`La suma entre ${numero1} i ${numero2} es ${numero1 + numero2}`);
+
+    // EXERCICI 5
+
+    let nota_examen = 4.6;
+    if (nota_examen >= 5) {
+        alert(`Felicitaciones, has aprobado el examen con un ${nota_examen}`);
+    } else {
+        alert(`Ohh has suspendido el examen con un ${nota_examen}`);
+    }
+
+    // EXERCICI 6
+
+    let paraules = "Tinc un cotxe de color blau";
+    console.log(paraules.replace("blau", "verd"));
+    console.log(paraules.replace(/o/g, "u"));
+
+    // EXERCICI 7
+
+    let objectes = ["taula", "cadira", "ordinador", "libreta"];
+    for (let i = 0; i < objectes.length; i++) {
+    console.log(`L'objecte ${objectes[i]} està a la posició ${i}.`);
+    }
+
+    // EXERCICI 8
+
+    function calculadora(operador, valor1, valor2) {
+        switch (operador) {
+            case "+":
+                return valor1 + valor2;
+                break;
+            case "-":
+                return valor1 - valor2;
+                break;
+            case "*":
+                return valor1 * valor2;
+                break;
+            default:
+                console.log("Error, l'operador no és correcte");
+        }
+    }
+    console.log(calculadora("+", 10, 20));
+    console.log(calculadora("-", 20, 10));
+    console.log(calculadora("*", 10, 20));
+
+    </script>
+</body>
+</html>

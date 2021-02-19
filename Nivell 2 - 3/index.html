@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div id="display" class="display">
+                <div class="result"></div>
+                <div class="total"></div>
+            </div>
+            <button onclick="number('7')">7</button>
+            <button value="8" onclick="number('8')">8</button>
+            <button value="9" onclick="number('9')">9</button>
+            <button value="+" class="green" onclick="number('+')">+</button>
+            <button value="4" onclick="number('4')">4</button>
+            <button value="5" onclick="number('5')">5</button>
+            <button value="6" onclick="number('6')">6</button>
+            <button value="-" class="green" onclick="number('-')">-</button>
+            <button value="1" onclick="number('1')">1</button>
+            <button value="2" onclick="number('2')">2</button>
+            <button value="3" onclick="number('3')">3</button>
+            <button value="x" class="green" onclick="number('*')">x</button>
+            <button value="0" onclick="number('0')">0</button>
+            <button value="." onclick="number('.')">.</button>
+            <button value="C" class="red" onclick="clearScr()">C</button>
+            <button value="÷" class="green" onclick="number('/')">÷</button>
+            <button value="=" class="equal" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
